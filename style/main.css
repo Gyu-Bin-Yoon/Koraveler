@@ -1,9 +1,15 @@
 /* https://www.w3schools.com/howto/howto_js_slideshow.asp */
+/* https://jforj.tistory.com/173 */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
 body{
     margin: 0;
     position: relative;
+    background-color: black;
 }
 
 /* navigator */
@@ -70,13 +76,12 @@ body{
 .mainSlider{
     overflow: hidden;
     width: 100%;
-    display: flex;
-    flex-direction: row;
 }
 
 .mainSlider_img{
     width: 100vw;
     height: 70vh;
+    display: none;
     filter: brightness(0.5);
 }
 
@@ -84,12 +89,139 @@ body{
     width: 100%;
 }
 
-@keyframes slider {
-    from{
-        left: 0px;
-    }
+/* 지역 사진 */
 
-    to{
-        left: -100px;
-    }
+.region1{
+    padding: 0 7% 0;
+}
+
+.region{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.region h1{
+    color : white;
+    font-size: 7em;
+    margin-bottom: 0;
+    font-weight: 300;
+    font-family: 'Playfair Display', serif;
+    padding-left: 10%;
+}
+
+.region p{
+    color : white;
+    padding-left: 17%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+}
+
+.regionImg{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap : 3%;
+    padding-right: 3%;
+}
+
+.regionImg img{
+    width: 40%;
+}
+
+/* 사진세개붙어있는... */
+
+.region2{
+    padding: 0 7% 0;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    position:relative;
+}
+
+.region2 p {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    color: white;
+    position: absolute;
+    left: 25%;
+    bottom: 1%;
+}
+.introduction{
+    text-align: center;
+}
+.introduction h1{
+    color:white;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    font-size: 3.5em;
+    padding-top: 7%;
+    padding-bottom: 5%;
+}
+
+.introductionImg{
+    text-align: center;
+}
+.introductionImg img{
+    width: 50%;
+    display: none;
+    padding: 0 25% 0;
+}
+
+/* 사계절 */
+.season{
+    padding: 0 7% 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.seasonTitle{
+    display: flex;
+    flex-direction: row;
+    color : white;
+    font-size: 4em;
+    margin-bottom: 0;
+    font-weight: 100;
+    font-family: 'Playfair Display', serif;
+    justify-content: center;
+    text-align: center;
+}
+
+.arrow-prev,
+.arrow-next {
+    position: relative;
+    float:left;
+    width:100px;
+    height:100px;
+    margin-right:5px;
+}
+
+.arrow-prev::after {
+    position: absolute;
+    left: 35px; 
+    top: 42px;
+    content: '';
+    width: 50px; /* 사이즈 */
+    height: 50px; /* 사이즈 */
+    border-top: 2px solid rgb(255, 255, 255);; /* 선 두께 */
+    border-right: 2px solid rgb(255, 255, 255);; /* 선 두께 */
+    transform: rotate(225deg); /* 각도 */
+}
+
+.arrow-next::after {
+    position: absolute;
+    left: 10px; 
+    top: 42px; 
+    content: '';
+    width: 50px; /* 사이즈 */
+    height: 50px; /* 사이즈 */
+    border-top: 2px solid rgb(255, 255, 255);; /* 선 두께 */
+    border-right: 2px solid rgb(255, 255, 255);; /* 선 두께 */
+    transform: rotate(45deg); /* 각도 */
+}
+
+.seasonTitle h1{
+    display: none;
+    margin: 0;
+    width:40%
 }
