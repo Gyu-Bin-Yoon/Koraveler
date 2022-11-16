@@ -5,6 +5,7 @@ body{
     margin: 0;
     position: relative;
 }
+
 /* navigator */
 .navigator{
     position: absolute;
@@ -65,16 +66,30 @@ body{
     width: 25%;
 }
 
-
+/* 맨 위 슬라이더 */
 .mainSlider{
     overflow: hidden;
     width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
 .mainSlider_img{
     width: 100vw;
     height: 70vh;
-    display: none;
     filter: brightness(0.5);
 }
 
+.mainSlider_img img{
+    width: 100%;
+}
+
+@keyframes slider {
+    from{
+        left: 0px;
+    }
+
+    to{
+        left: -100px;
+    }
+}
