@@ -80,7 +80,7 @@ body{
 
 .mainSlider_img{
     width: 100vw;
-    height: 70vh;
+    height: 100vh;
     display: none;
     filter: brightness(0.5);
 }
@@ -181,7 +181,7 @@ body{
     color : white;
     font-size: 4em;
     margin-bottom: 0;
-    font-weight: 100;
+    font-weight: lighter;
     font-family: 'Playfair Display', serif;
     justify-content: center;
     text-align: center;
@@ -203,8 +203,8 @@ body{
     content: '';
     width: 50px; /* 사이즈 */
     height: 50px; /* 사이즈 */
-    border-top: 2px solid rgb(255, 255, 255);; /* 선 두께 */
-    border-right: 2px solid rgb(255, 255, 255);; /* 선 두께 */
+    border-top: 1px solid rgb(255, 255, 255);; /* 선 두께 */
+    border-right: 1px solid rgb(255, 255, 255);; /* 선 두께 */
     transform: rotate(225deg); /* 각도 */
 }
 
@@ -215,8 +215,8 @@ body{
     content: '';
     width: 50px; /* 사이즈 */
     height: 50px; /* 사이즈 */
-    border-top: 2px solid rgb(255, 255, 255);; /* 선 두께 */
-    border-right: 2px solid rgb(255, 255, 255);; /* 선 두께 */
+    border-top: 1px solid rgb(255, 255, 255);; /* 선 두께 */
+    border-right: 1px solid rgb(255, 255, 255);; /* 선 두께 */
     transform: rotate(45deg); /* 각도 */
 }
 
@@ -224,4 +224,108 @@ body{
     display: none;
     margin: 0;
     width:40%
+}
+
+.seasonWrapper {
+    margin: 3% 10% 5% 10%;
+    display: none;
+}
+
+.seasonImg {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.fall0,
+.spring0,
+.summer0 {
+    display: flex;
+    flex-direction: row;
+    gap: 3vh;
+}
+
+.fall1,
+.fall2,
+.spring1,
+.spring2,
+.summer1 {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.fall1,
+.spring1,
+.summer0 > img{
+    width: 46%;
+    
+}
+
+.fall2,
+.spring2,
+.summer1 {
+    width: 51%;
+}
+
+/* footer */
+footer > p {
+    color: white;
+    width: 10%;
+    margin-left: 80%;
+    font-family: 'Playfair Display', serif;
+}
+hr {
+    width: 70%;
+}
+
+.Wrapper{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    gap: 13%;
+    align-items: center;
+    padding: 3% 15% 3%;
+}
+
+footer h6{
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: small;
+    font-weight: 600;
+    margin-bottom: 2%;
+}
+
+.Wrapper p {
+    font-family: 'Inter', sans-serif;
+    color: white;
+    margin-top: 1%;
+    font-weight: 100;
+}
+
+.footerContact{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footerContact > img{
+    width: 50%;
+}
+
+.footerContactImg{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap : 2%
+}
+
+.footerContactImg img{
+    width: 3.5%;
+}
+
+.call h6{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: white;
+    font-size: small;
 }

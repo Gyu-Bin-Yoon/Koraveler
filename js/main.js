@@ -44,6 +44,7 @@ function seasonTitleSliderNext(){
     seasonTitleIndex = 0;
   }
   seasonTitle[seasonTitleIndex].style.display="block";
+  seasonImgSlider();
 }
 function seasonTitleSliderPrev(){
   let seasonTitle = document.querySelectorAll(".seasonTitle h1");
@@ -55,6 +56,7 @@ function seasonTitleSliderPrev(){
     seasonTitleIndex = seasonTitle.length-1;
   }
   seasonTitle[seasonTitleIndex].style.display="block";
+  seasonImgSlider();
 }
 
 let arrowNext = document.querySelector(".arrow-next");
@@ -62,4 +64,14 @@ let arrowPrev = document.querySelector(".arrow-prev");
 arrowNext.addEventListener("click" , seasonTitleSliderNext);
 arrowPrev.addEventListener("click",seasonTitleSliderPrev);
 let firstSeason = document.querySelector(".seasonTitle h1");
+let firstSeasonWrapper = document.querySelector(".seasonWrapper");
 firstSeason.style.display="block";
+firstSeasonWrapper.style.display="block";
+
+function seasonImgSlider(){
+  let seasonWrapper = document.querySelectorAll(".seasonWrapper");
+  seasonWrapper.forEach((wrapper) => {
+    wrapper.style.display='none';
+  })
+  seasonWrapper[seasonTitleIndex].style.display="block";
+}
