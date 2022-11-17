@@ -1,0 +1,77 @@
+/* navigator */
+.navigator{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20%;
+    font-family: 'Inter', sans-serif;
+    padding: 2%;
+    color: white;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.navigator_lang{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:20%;
+    font-size: small;
+    font-weight: 500;
+}
+
+.navigator_center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:20%;
+    text-align: center;
+}
+
+
+
+.navigator_page{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:10%;
+    font-size: small;
+    font-weight: 500;
+}
+
+.navigator_center img{
+    width: 40%;
+}
+
+.navigator a:link { 
+    color:#ffffff; text-decoration: none;
+}  
+
+.navigator a:visited { color:#ffffff; text-decoration: none;} 
+
+.navigator a:hover { color:#ffffff; text-decoration: underline;}
+
+.navigator a:active { color:#ffffff; text-decoration: underline;}
+
+
+
+.navigator_contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap : 20%
+}
+
+.navigator_contact img{
+    width: 25%;
+}
+
+.navigator_center img:hover,
+.navigator p:hover,
+.navigator_contact img:hover {
+    cursor: pointer;
+}

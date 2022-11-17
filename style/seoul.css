@@ -1,0 +1,79 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#container > div {
+	display: flex;
+	min-height: 200px;
+	background-size: cover;
+	background-position: center;
+	justify-content: center;
+	align-items: center;
+}
+
+@media (max-width: 768px) {
+	#container {
+		display: flex;
+		flex-direction: row;
+		aspect-ratio: 1;
+		overflow-x: scroll;
+		scroll-snap-type: x mandatory;
+	}
+	#container > div {
+		aspect-ratio: 1;
+		scroll-snap-align: center;
+	}
+}
+
+@media (min-width: 769px) {
+	#container {
+		height: 100vh;
+		overflow-y: scroll;
+		scroll-snap-type: y mandatory;
+	}
+
+	#container > div {
+		height: 100vh;
+		scroll-snap-align: start;
+	}
+}
+
+.container_img {
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	position: absolute;
+	background-size: cover;
+}
+
+/* 가상의 박스를 삽입하여 어둡게 만들기 */
+.container_img {
+	/* filter: brightness(50%); */
+}
+
+#container_img_1 {
+	background-image: url(../img/sub/seoul/광화문광장.png);
+}
+
+#container_img_2 {
+	background-image: url(../img/sub/seoul/롯데월드.png);
+}
+
+#container_img_3 {
+	background-image: url(../img/sub/seoul/잠원한강공원.png);
+}
+
+.container_ex {
+	/* position: relative;
+	text-align: right; */
+}
+
+.container_ex h1 {
+	font-size: 80px;
+	font-weight: bold;
+	line-height: 0.4em;
+	color: #fff;
+}
+
+.container_ex p {
+}

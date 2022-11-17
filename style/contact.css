@@ -1,0 +1,142 @@
+@import url(nav.css);
+@import url(footer.css);
+@import url(font.css);
+
+body{
+    margin: 0;
+    position: relative;
+    background-color: black;
+}
+
+/* 윗 사진 */
+.top img{
+    width: 100vw;
+    height: 75vh;
+}
+
+.top p{
+    border-top: 1px solid rgb(255, 255, 255);
+    border-right: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    border-left: 1px solid rgb(255, 255, 255);
+    font-weight: 300;
+    font-family: 'Playfair Display', serif;
+    font-size: 4em;
+    padding: 1% 2%;
+    position: absolute;
+    left: 35vw;
+    top: 25vh;
+    color: white;
+}
+
+/* 컨택 아이콘 */
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:10%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.contactWay{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    align-items: center;
+    width: 15%;
+}
+
+.contactWay h6{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: white;
+    font-size: 1em;
+    margin: 0;
+}
+
+.contactWay p{
+    font-family: 'Inter', sans-serif;
+    color: white;
+    margin-top: 3%;
+    font-weight: 100;
+    font-size: 0.8em;
+}
+
+.contactWay img{
+    width: 15%;
+}
+
+/* 폼 */
+
+.contactForm {
+    text-align: center;
+    margin : 5% 0;
+}
+
+.contactForm p{
+    font-family: 'Inter', sans-serif;
+    color: lightgray;
+    font-weight: 400;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    margin-bottom: 5%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2em;
+    color: lightgray;
+}
+
+#name,
+#email,
+#title {
+    width: 50%;
+    height: 5vh;
+    background-color: #343434;
+    border: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: white;
+    padding: 0 1% 0;
+}
+
+textarea {
+    width: 50%;
+    height: 16vh;
+    background-color: #343434;
+    border: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: white;
+    padding: 1% 1% 0;
+}
+
+#button{
+    font-family: 'Inter', sans-serif;
+    color: white;
+    background-color: #2E8793;
+    width: 140px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+#button:hover{
+    cursor: pointer;
+}
+
+/* 아랫 사진 */
+.bottom img{
+    width: 100vw;
+    height: 40vh;
+}
+
